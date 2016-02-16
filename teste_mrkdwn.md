@@ -33,6 +33,16 @@ Uma lista numerada e com níveis:
   - Ainda outro subitem
 
 Outra formatação: `Outra formatação`
+
+a | b | c
+--- | --- | ---
+1 | 2 | 3
+Tabela 1: uma tabela
+
+Uma imagem:
+
+![uma imagem](http://i3.kym-cdn.com/photos/images/original/000/694/985/55a.png)
+
 ```
 Este texto vai ser minha referência rápida de estilo de markdown!
 ```
