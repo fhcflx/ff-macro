@@ -24,10 +24,10 @@
   <dlg:text dlg:style-id="1" dlg:id="Label9" dlg:tab-index="15" dlg:left="5" dlg:top="144" dlg:width="32" dlg:height="9" dlg:value="Diagnóstico"/>
   <dlg:text dlg:style-id="1" dlg:id="Label10" dlg:tab-index="16" dlg:left="5" dlg:top="159" dlg:width="32" dlg:height="9" dlg:value="Protocolo"/>
   <dlg:button dlg:id="CommandButton1" dlg:tab-index="17" dlg:left="45" dlg:top="254" dlg:width="49" dlg:height="16" dlg:value="OK">
-   <script:event script:event-name="on-performaction" script:macro-name="vnd.sun.star.script:Standard.ff.btnOk_click?language=Basic&amp;location=document" script:language="Script"/>
+   <script:event script:event-name="on-performaction" script:macro-name="vnd.sun.star.script:ff.ff.btnOk_click?language=Basic&amp;location=application" script:language="Script"/>
   </dlg:button>
   <dlg:button dlg:id="CommandButton2" dlg:tab-index="18" dlg:left="135" dlg:top="254" dlg:width="49" dlg:height="16" dlg:value="Cancelar">
-   <script:event script:event-name="on-performaction" script:macro-name="vnd.sun.star.script:Standard.ff.btnCancel_click?language=Basic&amp;location=document" script:language="Script"/>
+   <script:event script:event-name="on-performaction" script:macro-name="vnd.sun.star.script:ff.ff.btnCancel_click?language=Basic&amp;location=application" script:language="Script"/>
   </dlg:button>
   <dlg:combobox dlg:id="ComboBox1" dlg:tab-index="19" dlg:left="40" dlg:top="142" dlg:width="165" dlg:height="11" dlg:value="Tipo histológico" dlg:spin="true">
    <dlg:menupopup>

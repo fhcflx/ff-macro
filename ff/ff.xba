@@ -4,13 +4,13 @@
 Dim dlg As Object
 
 Sub Main
-	DialogLibraries.LoadLibrary(&quot;Standard&quot;)
-	dlg = CreateUnoDialog(DialogLibraries.Standard.ff)
+	DialogLibraries.LoadLibrary(&quot;ff&quot;)
+	dlg = CreateUnoDialog(DialogLibraries.ff.ff)
 	dlg.Execute()
 End Sub
 
 Sub btnCancel_click
-   dlg.endExecute()
+    dlg.endExecute()
 	End
 End Sub
 
