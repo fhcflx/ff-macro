@@ -71,7 +71,7 @@ idade = INT(Age)
 
 
 Dim doc, url, args()
-   url = ConvertToURL(&quot;E:\ff.ott&quot;)
+   url = ConvertToURL(&quot;/Users/Helder/Dropbox/git/rapadura/ff.ott&quot;)
 doc = StarDesktop.loadComponentFromUrl(url, &quot;_blank&quot;, 0, args())
 
  doc.Bookmarks.getByName(&quot;nome&quot;).Anchor.setString(TextField1.Text)
