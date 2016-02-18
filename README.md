@@ -18,3 +18,5 @@ Em geral, para Mac OS X, /Users/[nome do usuário]/Application Support/openoffic
 ```
 
 Testado para AOO 4.1.X e LO 4.X
+
+[![DOI](https://zenodo.org/badge/19810/cmprsk/rapadura.svg)](https://zenodo.org/badge/latestdoi/19810/cmprsk/rapadura)
