@@ -20,3 +20,23 @@ Em geral, para Mac OS X, /Users/[nome do usuário]/Application Support/openoffic
 Testado para AOO 4.1.X e LO 4.X
 
 [![DOI](https://zenodo.org/badge/19810/cmprsk/rapadura.svg)](https://zenodo.org/badge/latestdoi/19810/cmprsk/rapadura)
+
+<p xmlns:dct="http://purl.org/dc/terms/" xmlns:vcard="http://www.w3.org/2001/vcard-rdf/3.0#">
+  <a rel="license"
+     href="http://creativecommons.org/publicdomain/zero/1.0/">
+    <img src="http://i.creativecommons.org/p/zero/1.0/88x31.png" style="border-style: none;" alt="CC0" />
+  </a>
+  <br />
+  To the extent possible under law,
+  <span resource="[_:publisher]" rel="dct:publisher">
+    <span property="dct:title">Francisco H C Felix</span></span>
+  has waived all copyright and related or neighboring rights to
+  <span property="dct:title">rapadura</span>.
+This work is published from:
+<span property="vcard:Country" datatype="dct:ISO3166"
+      content="BR" about="[_:publisher]">
+  Brasil</span>.
+</p>
+
+**The MIT license (MIT)**
+Copyrights 2016 Francisco H C Felix
