@@ -1,5 +1,4 @@
-# rapadura
-My repository in GitHub to deposit data and code for my projects.
+# ff-macro
 
 ## Macro para openoffice.org (basic)
 
@@ -31,7 +30,7 @@ Testado para AOO 4.1.X e LO 4.X
   <span resource="[_:publisher]" rel="dct:publisher">
     <span property="dct:title">Francisco H C Felix</span></span>
   has waived all copyright and related or neighboring rights to
-  <span property="dct:title">rapadura</span>.
+  <span property="dct:title">ff-macro</span>.
 This work is published from:
 <span property="vcard:Country" datatype="dct:ISO3166"
       content="BR" about="[_:publisher]">
@@ -39,4 +38,4 @@ This work is published from:
 </p>
 
 **The MIT license (MIT)**
-Copyrights 2016 Francisco H C Felix
+Copyrights 2016-2017 Francisco H C Felix
