@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE script:module PUBLIC "-//OpenOffice.org//DTD OfficeDocument 1.0//EN" "module.dtd">
+<script:module xmlns:script="http://openoffice.org/2000/script" script:name="ff" script:language="StarBasic">REM  *****  BASIC  *****
+Dim dlg As Object
+
+Sub Main
+	DialogLibraries.LoadLibrary(&quot;Standard&quot;)
+	dlg = CreateUnoDialog(DialogLibraries.Standard.ff)
+	dlg.Execute()
+End Sub
+
+Sub btnCancel_click
+   dlg.endExecute()
+	End
+End Sub
+
+Sub btnOk_click
+
+	TextField1 = dlg.getControl(&quot;TextField1&quot;)
+	TextField2 = dlg.getControl(&quot;TextField2&quot;)
+	TextField3 = dlg.getControl(&quot;TextField3&quot;)
+	TextField4 = dlg.getControl(&quot;TextField4&quot;)
+	TextField5 = dlg.getControl(&quot;TextField5&quot;)
+	NumericField1 = dlg.getControl(&quot;NumericField1&quot;)
+	NumericField2 = dlg.getControl(&quot;NumericField2&quot;)
+	NumericField3 = dlg.getControl(&quot;NumericField3&quot;)
+	DateField1 = dlg.getControl(&quot;DateField1&quot;)
+	DateField2 = dlg.getControl(&quot;DateField2&quot;)
+	DateField3 = dlg.getControl(&quot;DateField3&quot;)
+	DateField4 = dlg.getControl(&quot;DateField4&quot;)
+	ComboBox1 = dlg.getControl(&quot;ComboBox1&quot;)
+	ComboBox2 = dlg.getControl(&quot;ComboBox2&quot;)
+	ComboBox3 = dlg.getControl(&quot;ComboBox3&quot;)
+	ComboBox4 = dlg.getControl(&quot;ComboBox4&quot;)
+		
+	If TextField1.Text = &quot;&quot; Then
+     MsgBox &quot;Informe o nome do paciente.&quot;, 48, &quot;Atenção&quot;
+     TextField1.SetFocus()
+     Exit Sub
+End If
+
+	If NumericField1.Text = &quot;&quot; Then
+     MsgBox &quot;Informe o número do prontuário.&quot;, 48, &quot;Atenção&quot;
+     NumericField1.SetFocus()
+     Exit Sub
+End If
+
+	If NumericField2.Text = &quot;&quot; Then
+     MsgBox &quot;Informe o peso do paciente.&quot;, 48, &quot;Atenção&quot;
+     NumericField2.SetFocus()
+     Exit Sub
+End If
+
+dim BirthDate as Date
+dim DiagDate as Date
+dim Age as string
+dim idade as string
+BirthDate = DateField3.Text
+DiagDate = DateField1.Text
+Age = DATEDIFF( &quot;y&quot;, BirthDate, DiagDate)/365
+idade = INT(Age)
+
+
+Dim doc, url, args()
+   url = ConvertToURL(&quot;~/ff/ff.ott&quot;)
+doc = StarDesktop.loadComponentFromUrl(url, &quot;_blank&quot;, 0, args())
+
+ doc.Bookmarks.getByName(&quot;nome&quot;).Anchor.setString(TextField1.Text)
+ doc.Bookmarks.getByName(&quot;nome2&quot;).Anchor.setString(TextField1.Text) 
+ doc.Bookmarks.getByName(&quot;nome3&quot;).Anchor.setString(TextField1.Text) 
+ doc.Bookmarks.getByName(&quot;nome4&quot;).Anchor.setString(TextField1.Text) 
+ doc.Bookmarks.getByName(&quot;nome5&quot;).Anchor.setString(TextField1.Text) 
+ doc.Bookmarks.getByName(&quot;nome51&quot;).Anchor.setString(TextField1.Text) 
+ doc.Bookmarks.getByName(&quot;nome6&quot;).Anchor.setString(TextField1.Text) 
+ doc.Bookmarks.getByName(&quot;nome7&quot;).Anchor.setString(TextField1.Text) 
+ doc.Bookmarks.getByName(&quot;nome71&quot;).Anchor.setString(TextField1.Text) 
+ doc.Bookmarks.getByName(&quot;nome711&quot;).Anchor.setString(TextField1.Text) 
+ doc.Bookmarks.getByName(&quot;nome7111&quot;).Anchor.setString(TextField1.Text) 
+ doc.Bookmarks.getByName(&quot;nome72&quot;).Anchor.setString(TextField1.Text)
+ doc.Bookmarks.getByName(&quot;nome8&quot;).Anchor.setString(TextField1.Text)  
+ doc.Bookmarks.getByName(&quot;cidade&quot;).Anchor.setString(TextField2.Text)
+ doc.Bookmarks.getByName(&quot;cidade2&quot;).Anchor.setString(TextField2.Text) 
+ doc.Bookmarks.getByName(&quot;estado&quot;).Anchor.setString(TextField3.Text)
+ doc.Bookmarks.getByName(&quot;mae&quot;).Anchor.setString(TextField4.Text)
+ doc.Bookmarks.getByName(&quot;mae2&quot;).Anchor.setString(TextField4.Text)
+ doc.Bookmarks.getByName(&quot;end&quot;).Anchor.setString(TextField5.Text)
+ doc.Bookmarks.getByName(&quot;end2&quot;).Anchor.setString(TextField5.Text) 
+ doc.Bookmarks.getByName(&quot;prontuario&quot;).Anchor.setString(NumericField1.Text)
+ doc.Bookmarks.getByName(&quot;prontuario2&quot;).Anchor.setString(NumericField1.Text) 
+ doc.Bookmarks.getByName(&quot;prontuario3&quot;).Anchor.setString(NumericField1.Text) 
+ doc.Bookmarks.getByName(&quot;prontuario4&quot;).Anchor.setString(NumericField1.Text) 
+ doc.Bookmarks.getByName(&quot;prontuario41&quot;).Anchor.setString(NumericField1.Text) 
+ doc.Bookmarks.getByName(&quot;prontuario5&quot;).Anchor.setString(NumericField1.Text) 
+ doc.Bookmarks.getByName(&quot;peso&quot;).Anchor.setString(NumericField2.Text) 
+ doc.Bookmarks.getByName(&quot;estat&quot;).Anchor.setString(NumericField3.Text) 
+ doc.Bookmarks.getByName(&quot;diagnostico&quot;).Anchor.setString(ComboBox1.Text)
+ 
+ doc.Bookmarks.getByName(&quot;histo&quot;).Anchor.setString(ComboBox1.Text)
+ doc.Bookmarks.getByName(&quot;histo2&quot;).Anchor.setString(ComboBox1.Text)
+ doc.Bookmarks.getByName(&quot;histo3&quot;).Anchor.setString(ComboBox1.Text)
+ doc.Bookmarks.getByName(&quot;histo4&quot;).Anchor.setString(ComboBox1.Text)
+ doc.Bookmarks.getByName(&quot;histo5&quot;).Anchor.setString(ComboBox1.Text)
+ doc.Bookmarks.getByName(&quot;histo6&quot;).Anchor.setString(ComboBox1.Text)
+ doc.Bookmarks.getByName(&quot;histo61&quot;).Anchor.setString(ComboBox1.Text)
+ doc.Bookmarks.getByName(&quot;histo62&quot;).Anchor.setString(ComboBox1.Text) 
+ doc.Bookmarks.getByName(&quot;histo63&quot;).Anchor.setString(ComboBox1.Text)  
+ doc.Bookmarks.getByName(&quot;histo631&quot;).Anchor.setString(ComboBox1.Text) 
+ 
+ doc.Bookmarks.getByName(&quot;protocolo 1&quot;).Anchor.setString(ComboBox2.Text)
+ doc.Bookmarks.getByName(&quot;protocolo1_2&quot;).Anchor.setString(ComboBox2.Text)
+ doc.Bookmarks.getByName(&quot;protocolo1_3&quot;).Anchor.setString(ComboBox2.Text)
+ doc.Bookmarks.getByName(&quot;protocolo1_4&quot;).Anchor.setString(ComboBox2.Text)
+ 
+ doc.Bookmarks.getByName(&quot;local&quot;).Anchor.setString(ComboBox3.Text)
+ doc.Bookmarks.getByName(&quot;local2&quot;).Anchor.setString(ComboBox3.Text)
+ doc.Bookmarks.getByName(&quot;local3&quot;).Anchor.setString(ComboBox3.Text)
+ doc.Bookmarks.getByName(&quot;local4&quot;).Anchor.setString(ComboBox3.Text)
+  
+ doc.Bookmarks.getByName(&quot;chang&quot;).Anchor.setString(ComboBox4.Text)
+ doc.Bookmarks.getByName(&quot;inip1&quot;).Anchor.setString(DateField2.Text)
+ doc.Bookmarks.getByName(&quot;inip1_2&quot;).Anchor.setString(DateField2.Text)
+ doc.Bookmarks.getByName(&quot;diagdat&quot;).Anchor.setString(DateField1.Text)
+ doc.Bookmarks.getByName(&quot;diagdat2&quot;).Anchor.setString(DateField1.Text)
+ doc.Bookmarks.getByName(&quot;diagdat3&quot;).Anchor.setString(DateField1.Text)
+ doc.Bookmarks.getByName(&quot;diagdat31&quot;).Anchor.setString(DateField1.Text) 
+ doc.Bookmarks.getByName(&quot;diagdat32&quot;).Anchor.setString(DateField1.Text) 
+ doc.Bookmarks.getByName(&quot;diagdat321&quot;).Anchor.setString(DateField1.Text)
+ doc.Bookmarks.getByName(&quot;diagdat3211&quot;).Anchor.setString(DateField1.Text)
+ 
+ doc.Bookmarks.getByName(&quot;nasc&quot;).Anchor.setString(DateField3.Text) 
+ doc.Bookmarks.getByName(&quot;nasc2&quot;).Anchor.setString(DateField3.Text)
+ doc.Bookmarks.getByName(&quot;nasc3&quot;).Anchor.setString(DateField3.Text) 
+ doc.Bookmarks.getByName(&quot;cirurgia&quot;).Anchor.setString(DateField4.Text)
+ doc.Bookmarks.getByName(&quot;cirurgia2&quot;).Anchor.setString(DateField4.Text)
+ doc.Bookmarks.getByName(&quot;cirurgia3&quot;).Anchor.setString(DateField4.Text)
+ doc.Bookmarks.getByName(&quot;cirurgia4&quot;).Anchor.setString(DateField4.Text) 
+ doc.Bookmarks.getByName(&quot;cirurgia5&quot;).Anchor.setString(DateField4.Text)
+ doc.Bookmarks.getByName(&quot;cirurgia6&quot;).Anchor.setString(DateField4.Text)
+  
+ doc.Bookmarks.getByName(&quot;idade&quot;).Anchor.setString(idade &amp; &quot; anos&quot;)
+
+ doc.Bookmarks.getByName(&quot;evolui1&quot;).Anchor.setString(&quot;Idade:&quot; &amp; idade &amp; &quot; anos&quot; &amp; &quot;, P = &quot; &amp; NumericField2.Text &amp; &quot;kg, E = &quot; &amp; NumericField3.Text &amp; &quot;m&quot;)
+ doc.Bookmarks.getByName(&quot;evolui2&quot;).Anchor.setString(&quot;- &quot; &amp; ComboBox1.Text &amp; &quot; -&gt; Diagnóstico: &quot; &amp; DateField1.Text)
+ doc.Bookmarks.getByName(&quot;evolui3&quot;).Anchor.setString(&quot;- &quot; &amp; ComboBox3.Text)
+ doc.Bookmarks.getByName(&quot;evolui4&quot;).Anchor.setString(&quot;- QT: &quot; &amp; ComboBox2.Text)
+        
+   doc.currentController.viewCursor.gotoRange(doc.Bookmarks.getByName(&quot;fimp1&quot;).Anchor, false)
+
+   btnCancel_click
+End Sub
+</script:module>
