@@ -1,22 +1,22 @@
 # ff-macro
 
-## Macro para openoffice.org (basic)
+## Macro para libreoffice.org (basic)
 
-ff.ott -> modelo para OOo, AOO, LO, com campos de dados marcados (*bookmarks*) para usar com a macro ff. Modelo de folha de rosto e documentos para identificação de pacientes com tumor cerebral, usado por mim no meu hospital. Este modelo não tem os logos institucionais que uso.
+ff.ott -> modelo para OOo, AOO, LO, com campos de dados marcados (*bookmarks*) para usar com a macro ff. Modelo de folha de rosto e documentos para identificação de pacientes com tumores do sistema nervoso central, usado por mim no meu hospital. Este modelo não tem os logos institucionais.
 
-ff -> pasta contendo os arquivos da macro ff para OOo, AOO, LO, que usa um formulário preenchível para completar os campos do modelo ff.ott
+ff -> pasta contendo o conteúdo do arquivo `ff.ott`, descomprimido. Na pasta `ff/Basic/Standard` está o arquivo da macro ff para OOo, AOO, LO, que usa um formulário preenchível para completar os campos do modelo `ff.ott`.
 
-Para instalar a macro, basta copiar esta pasta da maneira como está para o caminho de armazenamento de macros de usuários do programa.
+Não é necessário instalação, basta abrir o arquivo e executar a macro. Caso se deseje, basta copiar o script na pasta de macros.
 
-> Ferramentas -> Opções -> Caminhos
-
-```
-
-Em geral, para Mac OS X, /Users/[nome do usuário]/Application Support/openoffice/4/user/basic
+> LibreOffice -> Preferences -> Paths
 
 ```
 
-Testado para AOO 4.1.X e LO 4.X
+Em geral, para Mac OS X, /Users/[nome do usuário]/Application Support/LibreOffice/4/user/basic
+
+```
+
+Testado para LO 5.X
 
 [![DOI](https://zenodo.org/badge/19810/cmprsk/rapadura.svg)](https://zenodo.org/badge/latestdoi/19810/cmprsk/rapadura)
 
@@ -38,4 +38,4 @@ This work is published from:
 </p>
 
 **The MIT license (MIT)**
-Copyrights 2016-2017 Francisco H C Felix
+2016-2018 Francisco H C Felix
