@@ -20,6 +20,13 @@ Testado para LO 5.X
 
 [![DOI](https://zenodo.org/badge/19810/cmprsk/rapadura.svg)](https://zenodo.org/badge/latestdoi/19810/cmprsk/rapadura)
 
+## Licence for code:
+
+**The MIT license (MIT)**
+2016-2018 Francisco H C Felix
+
+## License for data, text, media, etc, BUT NOT FOR CODE:
+
 <p xmlns:dct="http://purl.org/dc/terms/" xmlns:vcard="http://www.w3.org/2001/vcard-rdf/3.0#">
   <a rel="license"
      href="http://creativecommons.org/publicdomain/zero/1.0/">
@@ -30,12 +37,9 @@ Testado para LO 5.X
   <span resource="[_:publisher]" rel="dct:publisher">
     <span property="dct:title">Francisco H C Felix</span></span>
   has waived all copyright and related or neighboring rights to
-  <span property="dct:title">ff-macro</span>.
+  <span property="dct:title">rapadura</span>.
 This work is published from:
 <span property="vcard:Country" datatype="dct:ISO3166"
       content="BR" about="[_:publisher]">
   Brasil</span>.
 </p>
-
-**The MIT license (MIT)**
-2016-2018 Francisco H C Felix
